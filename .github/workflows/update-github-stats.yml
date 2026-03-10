@@ -13,8 +13,9 @@ jobs:
       - name: Checkout Repo
         uses: actions/checkout@v3
 
-      - name: Download GitHub Stats Image
+      - name: Download GitHub Stats SVG
         run: |
+          mkdir -p assets
           curl -L "https://stats.pphat.top/stats?username=samTime101&avatar_mode=radar&theme=default&data_border_style=frame" -o assets/github-stats.svg
 
       - name: Commit and Push
