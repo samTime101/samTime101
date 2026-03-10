@@ -15,7 +15,7 @@ jobs:
 
       - name: Download GitHub Stats Image
         run: |
-          curl -L "https://stats.pphat.top/stats?username=samTime101&avatar_mode=radar&theme=default&data_border_style=frame" -o assets/github-stats.png
+          curl -L "https://stats.pphat.top/stats?username=samTime101&avatar_mode=radar&theme=default&data_border_style=frame" -o assets/github-stats.svg
 
       - name: Commit and Push
         run: |
